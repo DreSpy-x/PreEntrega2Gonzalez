@@ -1,0 +1,441 @@
+
+/* Estilos globales */
+body {
+    font-family: 'Poppins', sans-serif; 
+    margin: 0;
+    padding: 0;
+}
+body, h1, h2, p {
+    margin: 0;
+}
+h1, h2 {
+    display: block;
+    font-size: 1.5em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+}
+h3 {
+    display: block;
+    font-size: 1.17em;
+    font-weight: bold;
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+/* Estilos del logo */
+.logo {
+    text-decoration: none;
+    color: white;
+}
+.logo img {
+    width: 50px;
+    height: 50px;
+}
+.logo img:hover {
+    mix-blend-mode: difference;
+}
+
+/* Estilos del header */
+header {
+    background-color: #333;
+    padding: 20px 40px;
+}
+.navbar-toggler {
+    background-color: #585858db;
+    border: 3px solid white;
+}
+.offcanvas-title {
+    color: white;
+}
+.offcanvas-body {
+    flex-direction: row-reverse;
+}
+.nav-link {
+    color: white !important;
+    margin-right: 10px;
+}
+.nav-link:hover {
+    border-top: 1px solid wheat;
+    border-bottom: 1px solid wheat;
+    color:rgb(231, 222, 211);
+    mix-blend-mode:difference;
+}
+.activo {
+    border-top: 1px solid wheat;
+    border-bottom: 1px solid wheat;
+    color:rgb(231, 222, 211);
+    font-weight: bolder;
+    mix-blend-mode:difference;
+}
+.dropdown-menu {
+    background-color: #333;
+}
+.redes {
+    text-decoration: none;
+    padding: 9px;
+}
+.redes img {
+    height: 30px;
+    width: 30px;
+    mix-blend-mode: color-dodge;
+}
+.redes img:hover {
+    width: 28px;
+    height: 28px;
+    mix-blend-mode:difference;
+}
+/* Estilos del section index*/  
+.index {
+    text-align: center;
+    padding: 40px 0px;
+}
+.inicio {
+    padding-bottom: 40px;
+}
+.inicio h1 {
+    padding-bottom: 20px;
+}
+.inicio p {
+    padding-bottom: 20px;
+}
+.boton-catalogo {
+    display: inline-block;
+    color: #4CAF50;
+    padding: 15px 30px;
+    border: 2px solid #4CAF50;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+}
+.boton-catalogo:hover {
+    background-color: #4CAF50;
+    color: #fff;
+} 
+.destacados {
+    background-color: #f9f9f9;
+    padding: 40px 0px;
+}
+.sobre-nosotros {
+    padding: 40px 0px;
+}
+.container-contenido-sobre-nosotros {
+    padding: 10px 0px;
+}
+.container-contenido-sobre-nosotros p , .newsletter p {
+    display: inline-block;
+    justify-content: center;
+    padding: 10px;
+    max-width: 1000px;
+}
+.boton-sobre-hidden-dimension {
+    display: inline-block;
+    border: 2px solid #3498db;
+    color: #3498db;
+    padding: 15px 50px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+}
+.boton-sobre-hidden-dimension:hover {
+    background-color: #3498db;
+    color: #fff;
+}
+.opinion-clientes {
+    background-color: #f9f9f9;
+    padding: 40px 0px;
+}
+.opinion-clientes h2 {
+    padding-bottom: 20px;
+}
+.container-opiniones {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.opinion {
+    max-width: 300px;
+    margin: 20px;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.newsletter {
+    padding-top: 40px;
+}
+.newsletter h2 {
+    margin-bottom: 20px;
+}
+.newsletter-form button {
+    margin-top: 20px;
+}
+.newsletter-form input {
+    padding: 10px;
+    margin-right: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+.newsletter-form button {
+    background-color: #4CAF50;
+    color: #fff;
+    font-weight: bolder;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.newsletter button:hover {
+    background-color: #307134;
+} 
+
+/* Estilos del section catalogo */
+.catalogo {
+    padding: 40px 0px;
+    text-align: center;
+}
+.catalogo h1 {
+    padding-bottom: 20px;
+}
+.container-productos, .container-destacados {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.producto, .destacado{
+    max-width: 450px;
+    margin: 20px;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    box-sizing: content-box;
+}
+.producto img {
+    max-width: 100%;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+.producto h2 {
+    padding: 10px 0px;
+}
+.producto p {
+    margin-bottom: 10px;
+    text-align: justify;
+}
+.producto .precio {
+    border-top: 2px solid #ddd;
+    padding-top: 20px;
+    text-align: center;
+    font-weight: bold;
+    color: #ff4500; 
+}
+.producto .boton-carrito {
+    background-color: #4CAF50;
+    color: white;
+    font-weight: bolder;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    padding: 15px;
+}
+.producto .boton-carrito:hover {
+    background-color: #307134;
+}
+
+/* Estilos del section sobre Hidden Dimension */
+.sobre-hidden-dimension {
+    padding: 40px 0px;
+    text-align: center;
+}
+.sobre-hidden-dimension h1 {
+    padding-bottom: 20px;
+}
+.nuestra-historia p {
+    display: inline-block;
+    flex-wrap: wrap;
+    max-width: 900px;
+}
+.container-modelos, .container-equipo {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.modelo {
+    max-width: 350px;
+    margin: 20px;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.modelo img {
+    max-width: 100%;
+    margin-bottom: 10px;
+}
+.nuestro-equipo h2 {
+    padding-bottom: 20px;
+}
+.container-equipo img { 
+    height: 300px;
+    width: 300px;
+    border-radius: 10px;
+}
+.container-equipo p, .container-equipo h3{
+    max-width: 300px;
+}
+
+/* Estilos del section de ayuda */
+.ayuda {
+    max-width: 800px;
+    padding: 40px;
+    margin: auto;
+    text-align: center;
+}
+.ayuda h1 {
+    padding-bottom: 20px;
+}
+.ayuda h2 {
+    padding-top: 40px;
+    padding-bottom: 20px;
+}
+.accordion-button {
+    background-color: #f9f9f9 !important;
+    font-weight:600 ;
+}
+.accordion-header {
+    margin: 0;
+}
+.botton-newsletter {
+    display: inline-block;
+    border: 1px solid #3498db;
+    color: #3498db;
+    padding: 1px 15px;
+    border-radius: 10px;
+    text-decoration: none;
+    font-weight: bold;
+}
+.botton-newsletter:hover {
+    background-color: #3498db;
+    color: #fff;
+}
+.boton-contacto {
+    margin-top: 20px;
+    display: inline-block;
+    border: 2px solid #4CAF50;
+    color: #4CAF50;
+    padding: 15px 30px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+}
+.boton-contacto:hover {
+    background-color: #4CAF50;
+    color: #fff;
+}
+
+/* Estilos del section de ayudanos a mejorar */
+.ayudanos-a-mejorar {
+    max-width: 800px;
+    padding: 40px;
+    margin: auto;
+}
+.cuestionario {
+    margin-bottom: 40px;
+}
+.cuestionario h1 {
+    text-align: center;
+    font-weight: bold;  
+    margin-bottom: 40px;
+}
+.pregunta {
+    margin-bottom: 55px;
+}
+.pregunta label {
+    display: block;
+    font-size: 18px;
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: 10px;
+}
+.escala-calificacion {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+}
+.escala-calificacion p {
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+.opciones {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+}
+.opciones input {
+    width: 20px;  
+    height: 20px;
+}
+.comentarios textarea {
+    width: 100%;
+    margin-top: 10px;
+}
+.terminos {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.enviar input {
+    background-color: #4CAF50;
+    color: #fff;
+    font-weight: bolder;
+    padding: 15px 50px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.enviar input:hover {
+    background-color: #307134;
+} 
+
+/* Estilos del footer */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+.footer-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.contact-info ul {
+    list-style-type: none;
+    padding: 0;
+}
+.contact-info ul li {
+    display: inline;
+    padding: 20px;
+}
+.contact-info ul li a {
+    text-decoration: none;
+    color: white;
+}
+.contact-info img {
+    width: 60px;
+    height: 60px;
+    mix-blend-mode:color-dodge;
+}
+.contact-info img:hover {
+    width: 58px;
+    height: 58px;
+    mix-blend-mode:difference;
+}
+.contact-info h3, .encuesta h3 {
+    font-weight: bolder;
+}
+.encuesta a {
+    text-decoration: underline;
+    color: aqua;   
+}
+.copyright { 
+    margin-top: 30px;
+    font-size: 14px;
+}
