@@ -32,6 +32,8 @@ h3 {
     height: 50px;
 }
 .logo img:hover {
+    animation: rubberBand;
+    animation-duration: 0.7s;
     mix-blend-mode: difference;
 }
 
@@ -53,21 +55,38 @@ header {
 .nav-link {
     color: white !important;
     margin-right: 10px;
+    position: relative;
 }
-.nav-link:hover {
-    border-top: 1px solid wheat;
-    border-bottom: 1px solid wheat;
-    color:rgb(231, 222, 211);
-    mix-blend-mode:difference;
+.nav-link .top-animation, .nav-link .bottom-animation {
+    position: absolute;
+    width: 100%;
+    height: 1px;
+    background-color: wheat;
+    transform: scaleX(0);
+    transition: all 0.6s ease;
+}
+.nav-link .top-animation {
+    top: 0;
+    left: 0;
+    transform-origin: left;
+}
+.nav-link .bottom-animation {
+    bottom: 0;
+    right: 0;
+    transform-origin: right;
+}
+.nav-link:hover .top-animation, .nav-link:hover .bottom-animation {
+    transform: scaleX(1);
 }
 .activo {
-    border-top: 1px solid wheat;
-    border-bottom: 1px solid wheat;
-    color:rgb(231, 222, 211);
-    font-weight: bolder;
-    mix-blend-mode:difference;
+    font-size: 17px;
+    font-weight:bolder;
+    color: wheat  !important;
 }
 .dropdown-menu {
+    background-color: #333;
+}
+.dropdown-item:hover{
     background-color: #333;
 }
 .redes {
@@ -80,8 +99,8 @@ header {
     mix-blend-mode: color-dodge;
 }
 .redes img:hover {
-    width: 28px;
-    height: 28px;
+    animation: rubberBand;
+    animation-duration: 0.7s;
     mix-blend-mode:difference;
 }
 /* Estilos del section index*/  
@@ -108,6 +127,8 @@ header {
     font-weight: bold;
 }
 .boton-catalogo:hover {
+    animation: pulse;
+    animation-duration: 1s;
     background-color: #4CAF50;
     color: #fff;
 } 
@@ -137,6 +158,8 @@ header {
     font-weight: bold;
 }
 .boton-sobre-hidden-dimension:hover {
+    animation: pulse;
+    animation-duration: 1s;
     background-color: #3498db;
     color: #fff;
 }
@@ -184,6 +207,8 @@ header {
     cursor: pointer;
 }
 .newsletter button:hover {
+    animation: pulse;
+    animation-duration: 1s;
     background-color: #307134;
 } 
 
@@ -238,6 +263,8 @@ header {
     padding: 15px;
 }
 .producto .boton-carrito:hover {
+    animation: pulse;
+    animation-duration: 1s;
     background-color: #307134;
 }
 
@@ -253,6 +280,7 @@ header {
     display: inline-block;
     flex-wrap: wrap;
     max-width: 900px;
+    padding-bottom: 15px;
 }
 .container-modelos, .container-equipo {
     display: flex;
@@ -272,7 +300,11 @@ header {
     margin-bottom: 10px;
 }
 .nuestro-equipo h2 {
+    padding-top: 30px;
     padding-bottom: 20px;
+}
+.container-equipo div {
+    margin: 20px;
 }
 .container-equipo img { 
     height: 300px;
@@ -424,8 +456,8 @@ footer {
     mix-blend-mode:color-dodge;
 }
 .contact-info img:hover {
-    width: 58px;
-    height: 58px;
+    animation: rubberBand;
+    animation-duration: 0.7s;
     mix-blend-mode:difference;
 }
 .contact-info h3, .encuesta h3 {
@@ -434,6 +466,10 @@ footer {
 .encuesta a {
     text-decoration: underline;
     color: aqua;   
+}
+.encuesta a p:hover{
+    animation: heartBeat;
+    animation-duration: 1s;
 }
 .copyright { 
     margin-top: 30px;

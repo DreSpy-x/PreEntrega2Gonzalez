@@ -7,20 +7,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <!-- Animate CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <!-- AOS CSS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <!-- CSS -->
     <link rel="stylesheet" href="../css/styles.css">
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,300&display=swap" rel="stylesheet"> 
 </head>
 
 <body>
+
     <!-- Header -->
     <header>
-        <nav class="navbar navbar-expand-lg ">
+        <nav class="navbar navbar-expand-lg">
             <div class="container-fluid">
-                <a class="logo" href="../index.html"><img src="https://i.ibb.co/HNy8wpS/Logo.png" alt="Hidden Dimension Logo"></a>
+                <a class="logo" href="../index.html"><img src="https://i.ibb.co/HNy8wpS/Logo.png" alt="Hidden Dimension Logo" data-aos="fade-down"></a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#navbarOffcanvas" aria-controls="navbarOffcanvas" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
@@ -29,16 +34,16 @@
                         <h5 class="offcanvas-title" id="navbarOffcanvasLabel">Menú</h5>
                         <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
                     </div>
-                    <div class="offcanvas-body">
+                    <div class="offcanvas-body" data-aos="fade-down">
                         <ul class="navbar-nav navbar-nav-scroll" style="--bs-scroll-height: 500px;">
-                            <li class="nav-item "><a class="nav-link" href="../index.html">Inicio</a></li>
-                            <li class="nav-item"><a class="nav-link" href="catalogo.html">Catálogo</a></li>
-                            <li class="nav-item"><a class="nav-link activo" href="sobre-hidden-dimension.html">Sobre Hidden Dimension</a></li>
+                            <li class="nav-item"><a class="nav-link" href="../index.html"><span class="top-animation"></span>Inicio<span class="bottom-animation"></span></a></li>
+                            <li class="nav-item"><a class="nav-link" href="catalogo.html"><span class="top-animation"></span>Catálogo<span class="bottom-animation"></span></a></li>
+                            <li class="nav-item"><a class="nav-link activo" href="sobre-hidden-dimension.html"><span class="top-animation"></span>Sobre Hidden Dimension<span class="bottom-animation"></span></a></li>
                             <li class="nav-item dropdown">
                                 <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                    Contactanos
+                                    <span class="top-animation"></span>Contactanos<span class="bottom-animation"></span>
                                 </a>
-                                <ul class="dropdown-menu dropdown-menu-dark dropdown-menu-lg-end">
+                                <div class="dropdown-menu dropdown-menu-dark dropdown-menu-lg-end">
                                     <a class="redes" href="https://instagram.com/hidden_dimension07?igshid=MTNiYzNiMzkwZA==" target="_blank" title="Instagram">
                                         <img src="https://i.ibb.co/ZJGsKy6/Instagram.jpg" alt="Instagram">
                                     </a>
@@ -48,15 +53,15 @@
                                     <a class="redes" href="https://api.whatsapp.com/message/IMGCUVVQUKHAM1?autoload=1&app_absent=0" target="_blank" title="Whatsapp">
                                         <img src="https://i.ibb.co/MDFwC3j/WhatsApp.jpg" alt="Whatsapp">
                                     </a>
-                                </ul>
+                                </div>
                             </li>
                             <li class="nav-item dropdown">
                                 <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                    Ayuda
+                                    <span class="top-animation"></span>Ayuda<span class="bottom-animation"></span>
                                 </a>
                                 <ul class="dropdown-menu dropdown-menu-dark dropdown-menu-lg-end">
-                                    <li><a class="dropdown-item nav-link" href="ayuda.html">Preguntas Frecuentes</a></li>
-                                    <li><a class="dropdown-item nav-link" href="ayudanos-a-mejorar.html">Ayudanos a Mejorar</a></li>
+                                    <li><a class="dropdown-item nav-link" href="ayuda.html"><span class="top-animation"></span>Preguntas Frecuentes<span class="bottom-animation"></span></a></li>
+                                    <li><a class="dropdown-item nav-link" href="ayudanos-a-mejorar.html"><span class="top-animation"></span>Ayudanos a Mejorar<span class="bottom-animation"></span></a></li>
                                 </ul>
                             </li>
                         </ul>
@@ -68,21 +73,21 @@
 
     <!-- Section -->
     <article class="sobre-hidden-dimension">
-        <h1>Decubre Hidden Dimension</h1>
+        <h1 data-aos="fade-down">Decubre Hidden Dimension</h1>
         <section class="nuestra-historia">
-            <p>En Hidden Dimension, trascendemos la moda convencional para ser una expresión única de individualidad y estilo. Nos inspiramos en diversas formas artísticas, desde la música hasta la fotografía, fusionando estos elementos en diseños exclusivos. Así, cada prenda se convierte en una narrativa visual que destaca tu singularidad. En Hidden Dimension, no seguimos tendencias; las creamos.</p>
+            <p data-aos="fade-down">En Hidden Dimension, trascendemos la moda convencional para ser una expresión única de individualidad y estilo. Nos inspiramos en diversas formas artísticas, desde la música hasta la fotografía, fusionando estos elementos en diseños exclusivos. Así, cada prenda se convierte en una narrativa visual que destaca tu singularidad. En Hidden Dimension, no seguimos tendencias; las creamos.</p>
             <div class="container-modelos">
-                <div class="modelo">
+                <div class="modelo" data-aos="zoom-in-up">
                     <img src="https://i.ibb.co/BLkYynF/Dise-o1.jpg" alt="modelo1">
                     <h3>Diseños Únicos y Exclusivos</h3>
                     <p>Nuestra ropa no tiene límites ni horizontes. Cada prenda es cuidadosamente diseñada para destacar tu personalidad y elevar tu estilo a nuevos niveles.</p>        
                 </div>
-                <div class="modelo">
+                <div class="modelo" data-aos="zoom-in-up">
                     <img src="https://i.ibb.co/gTtKXSy/Dise-o2.jpg" alt="modelo2">
                     <h3>Envíos a toda Colombia</h3>
                     <p>Te llevamos lo mejor de la moda directamente a tu puerta, sin importar dónde te encuentres en Colombia.</p>
                 </div>
-                <div class="modelo">
+                <div class="modelo" data-aos="zoom-in-up">
                     <img src="https://i.ibb.co/6gHXjnJ/Dise-o3.jpg" alt="modelo3">
                     <h3>Calidad Inigualable</h3>
                     <p>Nuestras camisas unisex están hechas con material 100% algodón peinado, utilizando técnicas de estampado de serigrafía y bordados de alta calidad.</p>        
@@ -91,24 +96,24 @@
         </section>
 
         <section class="nuestro-equipo">
-            <h2>Nuestro Equipo</h2>
+            <h2 data-aos="fade-up">Nuestro Equipo</h2>
             <div class="container-equipo">
-                <div>
+                <div data-aos="fade-up">
                     <img src="https://i.ibb.co/MNqHYJy/Harrison.jpg" alt="Harrison Acevedo Sabogal">
                     <h3>Harrison Acevedo Sabogal <br> Gerente y Diseñador</h3>
                     <p>Apasionado por la moda, Harrison lidera nuestro equipo creativo con su visión única.</p>
                 </div>
-                <div>
+                <div data-aos="fade-up">
                     <img src="https://i.ibb.co/6w9cprL/Santiago.jpg" alt="David Santiago Nontoa">
                     <h3>David Santiago Nontoa <br> Inversionista</h3>
                     <p>Con una visión empresarial sólida, David impulsa el crecimiento y éxito de Hidden Dimension.</p>     
                 </div>
-                <div>
+                <div data-aos="fade-up">
                     <img src="https://i.ibb.co/jZsCQDF/Damian.jpg" alt="Damian Trujillo Gonzalez">
                     <h3>Damian Trujillo Gonzalez <br> Diseñador</h3>
                     <p>El talento de Damian se refleja en cada detalle de nuestras prendas, creando diseños que marcan tendencia.</p>    
                 </div>
-                <div>
+                <div data-aos="fade-up">
                     <img src="https://i.ibb.co/xLH4nXW/Andres.jpg" alt="Andres Felipe Oñate">
                     <h3>Andres Felipe Oñate <br> Diseñador Web</h3>
                     <p>Andres aporta su experiencia para llevar la experiencia de compra en línea a otro nivel.</p>
@@ -122,41 +127,46 @@
     <footer>
         <div class="footer-container">
             <div class="contact-info">
-                <h3>Contactanos</h3>
+                <h3 data-aos="fade-up">Contactanos</h3>
                 <nav>
                     <ul>
                         <li>
                             <a href="https://instagram.com/hidden_dimension07?igshid=MTNiYzNiMzkwZA==" target="_blank" title="Instagram">
-                                <img src="https://i.ibb.co/ZJGsKy6/Instagram.jpg" alt="Instagram">
+                                <img src="https://i.ibb.co/ZJGsKy6/Instagram.jpg" alt="Instagram" data-aos="fade-up">
                             </a>
                         </li>
                         <li>
                             <a href="#" target="_blank" title="Facebook">
-                                <img src="https://i.ibb.co/yd6JKBB/Facebook.jpg" alt="Facebook">
+                                <img src="https://i.ibb.co/yd6JKBB/Facebook.jpg" alt="Facebook" data-aos="fade-up">
                             </a>
                         </li>
                         <li>
                             <a href="https://api.whatsapp.com/message/IMGCUVVQUKHAM1?autoload=1&app_absent=0" target="_blank" title="Whatsapp">
-                                <img src="https://i.ibb.co/MDFwC3j/WhatsApp.jpg" alt="Whatsapp">
+                                <img src="https://i.ibb.co/MDFwC3j/WhatsApp.jpg" alt="Whatsapp" data-aos="fade-up">
                             </a>
                         </li>
                     </ul>
                 </nav>
             </div>
             <div class ="encuesta">
-                <h3>Ayúdanos a mejorar</h3>
-                <p>Haz una breve encuesta sobre la visita de hoy.</p>
-                <a href="ayudanos-a-mejorar.html">Comenzar encuesta</a>
+                <h3 data-aos="fade-up">Ayúdanos a mejorar</h3>
+                <p data-aos="fade-up" >Haz una breve encuesta sobre la visita de hoy.</p>
+                <a href="ayudanos-a-mejorar.html"><p data-aos="fade-up">Comenzar encuesta</p></a>
             </div>
         </div>
         <div class="copyright">
             <div class="logo">
                 <a href="../index.html"><img src="https://i.ibb.co/HNy8wpS/Logo.png" alt="Hidden Dimension Logo"></a>
             </div>
-            <p > &copy; 2023 Hidden Dimension. Todos los derechos reservados.</p>
+            <p>&copy; 2023 Hidden Dimension. Todos los derechos reservados.</p>
         </div>
     </footer>
+
+    <!-- AOS Java Script -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script> AOS.init(); </script>
     <!-- Bootstrap Java Script -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+
 </body>
 </html>
