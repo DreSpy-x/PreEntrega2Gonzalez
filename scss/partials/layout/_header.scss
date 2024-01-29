@@ -1,0 +1,65 @@
+// Encabezado
+header {
+    background-color: map-get($colors,gris_oscuro);
+    padding: 20px 40px;
+    // NavBar
+    .navbar-toggler {
+        background-color: map-get($colors,gris_cuarzo);
+        border: 1px solid map-get($colors,blanco_zinc);
+    }
+    .offcanvas-title {
+        color: map-get($colors,blanco);
+    }
+    .offcanvas-body {
+        flex-direction: row-reverse;
+        .nav-link {
+            color: map-get($colors,blanco) !important;
+            position: relative;
+            margin-right: 10px;
+            // Animación NavBar
+            .top-animation {
+                @extend .animation-header;
+                top: 0;
+                left: 0;
+                transform-origin: left;
+            }
+            .bottom-animation {
+                @extend .animation-header;
+                bottom: 0;
+                right: 0;
+                transform-origin: right;
+            }
+            &:hover {
+                .top-animation,.bottom-animation {
+                    transform: scaleX(1);
+                }
+            }
+        }
+        // Pagina Activa
+        .activo {
+            font-weight:bolder;
+            font-size: 17px;
+            color: wheat !important;
+        }
+        // Dropdowns
+        .dropdown-menu {
+            background-color: map-get($colors,gris_oscuro);
+            .dropdown-item {
+                &:hover {
+                    background-color: map-get($colors,gris_oscuro);
+                }
+            }
+            .redes {
+                color: map-get($colors,blanco);
+                padding: 9px;
+                img {
+                    @include medidas (30px,30px);
+                    mix-blend-mode: color-dodge;
+                    &:hover {
+                        @include animacion(rubberBand,0.7s,difference);
+                    }
+                }
+            }
+        }
+    }
+}

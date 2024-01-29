@@ -1,0 +1,52 @@
+// Cards pagina Index
+.container-destacados {
+    @include flex (flex,row,space-around,normal,wrap);
+    .destacado {
+        @include card (450px,20px,20px);
+    }
+}
+.container-opiniones {
+    @include flex (flex,row,space-around,normal,wrap);
+    .opinion {
+        @include card (300px,20px,20px);
+        box-sizing: border-box;
+    }
+}
+// Cards pagina Catálogo
+.container-productos {
+    @include flex (flex,row,space-around,normal,wrap);
+    .producto {
+        @include card (450px,20px,20px);
+        img {
+            max-width: 100%;
+            border-radius: 5px;
+            margin-bottom: 10px;
+        }
+        h2 {
+            padding-top: 10px;
+        }
+        p {
+            margin-bottom: 10px;
+            text-align: justify;
+        }
+        .precio {
+            border-top: 2px solid #ddd;
+            padding-top: 20px;
+            text-align: center;
+            font-weight: bold;
+            color: map-get($colors,rojo_anaranjado) 
+        }
+    }
+}
+// Cards pagina Sobre Hidden Dimension
+.container-modelos {
+    @include flex (flex,row,space-around,normal,wrap);
+    .modelo {
+        @include card (350px,20px,20px);
+        box-sizing: border-box;
+        img {
+            max-width: 100%;
+            margin-bottom: 10px;
+        }
+    }
+}

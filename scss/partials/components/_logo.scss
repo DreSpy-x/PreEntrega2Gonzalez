@@ -1,0 +1,10 @@
+// Logo
+.logo {
+    color: map-get($colors,blanco);
+    img {
+        @include medidas(50px,50px);
+        &:hover {
+            @include animacion(rubberBand,0.7s,difference);
+        }
+    }
+}

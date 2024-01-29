@@ -1,0 +1,48 @@
+// Pie de Página
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    .footer-container {
+        @include flex (flex,row,space-around,normal,wrap);
+        // Info de contacto
+        .contact-info {
+            ul {
+                list-style-type: none;
+                padding: 0;
+                li {
+                    padding: 20px;
+                    @include flex (inline,row,space-around,normal,wrap);
+                    a {
+                        color: map-get($colors,blanco);
+                        img {
+                            @include medidas (60px,60px);
+                            mix-blend-mode: color-dodge;
+                            &:hover{
+                                @include animacion(rubberBand,0.7s,difference);
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        // Encuesta
+        .encuesta {
+            a {
+                text-decoration: underline;
+                color: map-get($colors,aguamarina);
+                p {
+                    &:hover {
+                        @include animacion(heartBeat,0.7s,difference);
+                    }
+                }
+            }
+        }
+    }
+    // Copyright
+    .copyright {
+        margin-top: 30px;
+        font-size: 14px;
+    }
+}

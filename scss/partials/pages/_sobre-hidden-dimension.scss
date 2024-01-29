@@ -1,0 +1,36 @@
+// Pagina Sobre Hidden Dimension
+.sobre-hidden-dimension {
+    padding: 40px 0px;
+    text-align: center;
+    h1 {
+        padding-bottom: 20px;
+    }
+    // Sobre nosotros
+    .nuestra-historia {
+        p {
+            @include flex (inline-block,row,center,normal,wrap);
+            max-width: 900px;
+            padding-bottom: 15px;
+        }
+    }
+    // Nuestro equipo
+    .nuestro-equipo {
+        h2 {
+            padding-top: 30px;
+            padding-bottom: 20px; 
+        }
+        .container-equipo {
+            @include flex (flex,row,space-around,normal,wrap);
+            div {
+                margin: 20px; 
+            }
+            img {
+                @include medidas (270px,270px);
+                border-radius: 10px;
+            }
+            h3,p {
+                max-width: 270px;
+            }
+        }
+    }
+}

@@ -1,0 +1,24 @@
+// Base
+@import 'partials/base/reset';
+@import 'partials/base/tipografia';
+
+// Utilities
+@import 'partials/utilities/maps';
+@import 'partials/utilities/mixins';
+
+// Components
+@import 'partials/components/logo';
+@import 'partials/components/animation-style';
+@import 'partials/components/cards';
+@import 'partials/components/buttons';
+
+// Layout
+@import 'partials/layout/header';
+@import 'partials/layout/footer';
+
+// Pages
+@import 'partials/pages/index';
+@import 'partials/pages/catalogo';
+@import 'partials/pages/sobre-hidden-dimension';
+@import 'partials/pages/ayuda';
+@import 'partials/pages/ayudanos-a-mejorar';

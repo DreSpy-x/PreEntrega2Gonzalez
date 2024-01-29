@@ -1,0 +1,60 @@
+// Pagina Index
+.index {
+    text-align: center;
+    padding: 40px 0px;
+    // Section Inicio
+    .inicio {
+        padding-bottom: 40px;
+        h1 {
+            padding-bottom: 20px;
+        }
+        p {
+            padding-bottom: 20px;
+        }
+    }
+    // Section Destacados
+    .destacados {
+        background-color: map-get($colors,blanco_zinc);
+        padding: 40px 0px;
+    }
+    // Section Sobre Nosotros    
+    .sobre-nosotros {
+        padding: 40px 0px;
+        .container-contenido-sobre-nosotros {
+            padding: 10px 0px;
+            p {
+                @include flex (inline-block,row,center,normal,wrap);
+                padding: 10px;
+                max-width: 1000px;
+            }
+        }
+    }
+    // Section Opinion Clientes
+    .opinion-clientes {
+        background-color: map-get($colors,blanco_zinc);
+        padding: 40px 0px;
+        h2 {
+            padding-bottom: 20px;
+        }
+    }
+    // Section NewSletter
+    .newsletter {
+        padding-top: 40px;
+        h2 {
+            padding-bottom: 20px;
+        }
+        p {
+            @include flex (inline-block,row,center,normal,wrap);
+            padding: 10px;
+            max-width: 1000px;
+        }
+        .newsletter-form {
+            input {
+                padding: 10px;
+                margin-right: 10px;
+                border: 1px solid map-get($colors,gris_claro);
+                border-radius: 5px;
+            }
+        }
+    }
+}

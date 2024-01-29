@@ -1,0 +1,66 @@
+// Botones pagina Index
+.boton-catalogo {
+    @include boton (15px 30px,map-get($colors,verde),2px solid map-get($colors,verde));
+    &:hover {
+        @include animacion(pulse,0.7s,unset);
+        color: map-get($colors,blanco);
+        background-color: map-get($colors,verde);
+    }
+}
+.boton-sobre-hidden-dimension {
+    @include boton (15px 50px,map-get($colors,azul),2px solid map-get($colors,azul));
+    &:hover {
+        @include animacion(pulse,0.7s,unset);
+        color: map-get($colors,blanco);
+        background-color: map-get($colors,azul); 
+    }
+}
+.boton-newsletter {
+    @include boton (10px 20px,map-get($colors,blanco),2px solid map-get($colors,negro));
+    margin-top: 20px;
+    background-color: map-get($colors,verde);
+    cursor: pointer;
+    &:hover {
+        @include animacion(pulse,0.7s,unset);
+        background-color: map-get($colors,verde_oscuro); 
+    }
+}
+// Botones pagina Catálogo
+.boton-carrito {
+    @include boton (15px,map-get($colors,blanco),none);
+    background-color: map-get($colors,verde);
+    border-radius: 10px;
+    cursor: pointer;
+    &:hover {
+        @include animacion(pulse,0.7s,unset);
+        background-color: map-get($colors,verde_oscuro); 
+    }
+}
+// Botones pagina Ayuda
+.boton-newsletter-ayuda {
+    @include boton (1px 15px,map-get($colors,azul),1px solid map-get($colors,azul));
+    border-radius: 10px;
+    &:hover {
+        @include animacion(pulse,0.7s,unset);
+        color: map-get($colors,blanco);
+        background-color: map-get($colors,azul); 
+    }
+}
+.boton-contacto {
+    @include boton (15px 30px,map-get($colors,verde),2px solid map-get($colors,verde));
+    margin-top: 20px;
+    &:hover {
+        @include animacion(pulse,0.7s,unset);
+        color: map-get($colors,blanco);
+        background-color: map-get($colors,verde); 
+    }
+}
+// Botones pagina Ayudanos a Mejorar
+.boton-enviar input{
+    @include boton (15px 50px,map-get($colors,blanco),2px solid map-get($colors,negro));
+    background-color: map-get($colors,verde);
+    &:hover {
+        @include animacion(pulse,0.7s,unset);
+        background-color: map-get($colors,verde_oscuro); 
+    }
+}
