@@ -1,3 +1,4 @@
+@charset "UTF-8";
 * {
   margin: 0;
   padding: 0;
@@ -121,14 +122,14 @@ body {
   color: rgb(255, 69, 0);
 }
 
-.container-modelos {
+.container-diseños {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
   align-items: normal;
   flex-wrap: wrap;
 }
-.container-modelos .modelo {
+.container-diseños .diseño {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   box-sizing: content-box;
   border: 1px solid rgb(221, 221, 221);
@@ -138,7 +139,7 @@ body {
   padding: 20px;
   box-sizing: border-box;
 }
-.container-modelos .modelo img {
+.container-diseños .diseño img {
   max-width: 100%;
   margin-bottom: 10px;
 }

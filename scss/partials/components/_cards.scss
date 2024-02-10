@@ -39,9 +39,9 @@
     }
 }
 // Cards pagina Sobre Hidden Dimension
-.container-modelos {
+.container-diseños {
     @include flex (flex,row,space-around,normal,wrap);
-    .modelo {
+    .diseño {
         @include card (350px,20px,20px);
         box-sizing: border-box;
         img {
