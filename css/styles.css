@@ -389,6 +389,9 @@ footer .copyright {
   background-color: rgb(245, 245, 245);
   padding: 40px 0px;
 }
+.index .destacados .destacado {
+  object-fit: cover;
+}
 .index .sobre-nosotros {
   padding: 40px 0px;
 }

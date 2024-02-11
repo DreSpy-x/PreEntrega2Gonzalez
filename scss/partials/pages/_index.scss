@@ -16,6 +16,9 @@
     .destacados {
         background-color: map-get($colors,blanco_zinc);
         padding: 40px 0px;
+        .destacado {
+            object-fit: cover;
+        }
     }
     // Section Sobre Nosotros    
     .sobre-nosotros {
